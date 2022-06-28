@@ -361,7 +361,7 @@ U_NA,              &kp RALT,          &to U_MOUSE,       &to U_SYM,         U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp UNDER,         &kp LPAR,          &kp RPAR,          U_NP,              U_NP
 
 #define NORDIC_PLUS MINUS
-#define NORDIC_SECTION N00
+#define NORDIC_SECTION N0
 
 #define MIRYOKU_ALTERNATIVES_SYM \
 &kp NORDIC_PLUS,          &kp NORDIC_SECTION,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          U_NA,              &to U_BASE,        &to U_EXTRA,       &to U_TAP,         &bootloader,       \
