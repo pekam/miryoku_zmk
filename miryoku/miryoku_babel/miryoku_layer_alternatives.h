@@ -351,7 +351,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 // Nordic symbols on number row
 
-#define NORDIC_SECTION N00
+#define NORDIC_SECTION N0
 #define NORDIC_PLUS MINUS
 #define NORDIC_BACKTICK PLUS
 
