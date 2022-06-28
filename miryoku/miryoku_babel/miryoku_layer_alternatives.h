@@ -347,11 +347,57 @@ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA
 U_NA,              &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA,              &kp BSLH,          &kp N1,            &kp N2,            &kp N3,            &kp GRAVE,         \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp MINUS,         &kp N0,            &kp DOT,           U_NP,              U_NP
 
+// NORDIC SYMBOLS
+
+// Nordic symbols on number row
+
+#define NORDIC_SECTION N00
+#define NORDIC_PLUS MINUS
+#define NORDIC_BACKTICK PLUS
+
+#define NORDIC_HALF LS(NORDIC_SECTION)
+#define NORDIC_EXCLAMATIONMARK LS(NUM_1)
+#define NORDIC_QUOTE LS(NUM_2)
+#define NORDIC_HASH LS(NUM_3)
+#define NORDIC_PERCENTAGE LS(NUM_5)
+#define NORDIC_AND LS(NUM_6)
+#define NORDIC_SLASH LS(NUM_7)
+#define NORDIC_PARENTHESES_LEFT LS(NUM_8)
+#define NORDIC_PARENTHESES_RIGHT LS(NUM_9)
+#define NORDIC_EQ LS(NUM_0)
+#define NORDIC_QUESTIONMARK LS(NORDIC_PLUS)
+
+#define NORDIC_AT RA(NUM_2)
+#define NORDIC_POUND RA(NUM_3)
+#define NORDIC_DOLLAR RA(NUM_4)
+#define NORDIC_CURLY_BRACE_LEFT RA(NUM_7)
+#define NORDIC_SQUARE_BRACKET_LEFT RA(NUM_8)
+#define NORDIC_SQUARE_BRACKET_RIGHT RA(NUM_9)
+#define NORDIC_CURLY_BRACE_RIGHT RA(NUM_0)
+#define NORDIC_BACKSLASH RA(NORDIC_PLUS)
+
+// Other nordic symbols
+#define NORDIC_CARET LS(N28)
+#define NORDIC_TILDA RA(N28)
+
+#define NORDIC_SINGLE_QUOTE BSLH
+#define NORDIC_ASTRK LS(NORDIC_SINGLE_QUOTE)
+
+#define NORDIC_LT N45
+#define NORDIC_GT LS(NORDIC_LT)
+#define NORDIC_PIPE RA(NORDIC_LT)
+
+#define NORDIC_MINUS SLASH
+
+#define NORDIC_EURO RA(E)
+
+// /NORDIC SYMBOLS
+
 #define MIRYOKU_ALTERNATIVES_NUM \
-&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              &kp LCTRL,         &kp LSHFT,         &kp LALT,          &kp LGUI,          \
-&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&kp NORDIC_ASTRK,  &kp N7,            &kp N8,            &kp N9,            &kp NORDIC_CARET,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+&kp NORDIC_EQ,     &kp N4,            &kp N5,            &kp N6,            &kp NORDIC_PERCENTAGE,    U_NA,              &kp LCTRL,         &kp LSHFT,         &kp LALT,          &kp LGUI,          \
+&kp NORDIC_PLUS,   &kp N1,            &kp N2,            &kp N3,            &kp NORDIC_HALF,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
+U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp NORDIC_MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_SYM_FLIP \
@@ -361,10 +407,10 @@ U_NA,              &kp RALT,          &u_to_U_MOUSE,     &u_to_U_SYM,       U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp UNDER,         &kp LPAR,          &kp RPAR,          U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_SYM \
-&kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,          U_NA,              &kp LCTRL,         &kp LSHFT,         &kp LALT,          &kp LGUI,          \
-&kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,          U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&kp NORDIC_BACKSLASH, &kp NORDIC_BACKTICK,     &kp NORDIC_EURO,         &kp NORDIC_DOLLAR,          U_NA,        U_NA,      &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+&kp NORDIC_SLASH,     &kp NORDIC_QUOTE,        &kp NORDIC_QUESTIONMARK, &kp NORDIC_EXCLAMATIONMARK, U_NA,        U_NA,      &kp LCTRL,         &kp LSHFT,         &kp LALT,          &kp LGUI,          \
+U_NA,                 &kp NORDIC_SINGLE_QUOTE, &kp NORDIC_AT,           &kp NORDIC_HASH,            U_NA,        U_NA,      &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA,              \
+U_NP,                 U_NP,                    U_NA,                    U_NA,                       U_NA,        U_NA,      U_NA,              U_NA,              U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_FUN_FLIP \
