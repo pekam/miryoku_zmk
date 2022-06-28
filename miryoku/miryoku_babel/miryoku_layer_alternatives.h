@@ -351,7 +351,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 // Nordic symbols on number row
 
-#define NORDIC_SECTION N0
+#define NORDIC_SECTION GRAVE
 #define NORDIC_PLUS MINUS
 #define NORDIC_BACKTICK PLUS
 
@@ -377,13 +377,13 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define NORDIC_BACKSLASH RA(NORDIC_PLUS)
 
 // Other nordic symbols
-#define NORDIC_CARET LS(N28)
-#define NORDIC_TILDA RA(N28)
+#define NORDIC_CARET LS(RIGHT_BRACKET)
+#define NORDIC_TILDA RA(RIGHT_BRACKET)
 
-#define NORDIC_SINGLE_QUOTE BSLH
+#define NORDIC_SINGLE_QUOTE NON_US_HASH
 #define NORDIC_ASTRK LS(NORDIC_SINGLE_QUOTE)
 
-#define NORDIC_LT N45
+#define NORDIC_LT NON_US_BACKSLASH
 #define NORDIC_GT LS(NORDIC_LT)
 #define NORDIC_PIPE RA(NORDIC_LT)
 
