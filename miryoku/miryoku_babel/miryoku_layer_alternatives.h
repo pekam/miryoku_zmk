@@ -377,7 +377,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define NORDIC_BACKSLASH RA(NORDIC_PLUS)
 
 // Other nordic symbols
-#define NORDIC_CARET N28
+#define NORDIC_CARET (N28)
 #define NORDIC_TILDA A
 
 #define NORDIC_SINGLE_QUOTE A
