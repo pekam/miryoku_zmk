@@ -1,7 +1,7 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define MIRYOKU_ALTERNATIVES_CODE \
+#define MIRYOKU_LAYER_CODE \
 &bootloader,   &to U_TAP,     &to U_EXTRA,   &to U_BASE,  U_NA,      U_NA,      &kp NORDIC_CURLY_BRACE_LEFT,    &kp NORDIC_CURLY_BRACE_RIGHT,    U_NA,          U_NA,             \
 &kp LGUI,      &kp LALT,      &kp LSHFT,     &kp LCTRL,   U_NA,      U_NA,      &kp NORDIC_PARENTHESES_LEFT,    &kp NORDIC_PARENTHESES_RIGHT,    &kp NORDIC_AND,        &kp NORDIC_PIPE,         \
 U_NA,          &kp RALT,      U_NA,          &to U_CODE,  U_NA,      U_NA,      &kp NORDIC_SQUARE_BRACKET_LEFT, &kp NORDIC_SQUARE_BRACKET_RIGHT, &kp NORDIC_LT,    &kp NORDIC_GT,           \
