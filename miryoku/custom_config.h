@@ -32,6 +32,8 @@ MIRYOKU_X(CODE,   "Code")
 #define U_FUN    9
 #define U_CODE   10
 
+#define MIRYOKU_LAYERMAPPING_CODE MIRYOKU_MAPPING
+
 // qwerty with code layer on V key
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
