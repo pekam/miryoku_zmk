@@ -34,9 +34,18 @@ MIRYOKU_X(CODE,   "Code")
 
 #define MIRYOKU_LAYERMAPPING_CODE MIRYOKU_MAPPING
 
-// qwerty with code layer on V key
+// hyper modifier: shift+control+alt+super
+#define HYPER LS(LC(LA(LGUI)))
+// meh modifier: shift+control+alt
+#define MEH LS(LC(LALT))
+
+/*
+Miryoku qwerty layer with:
+- code layer on V key
+- hyper modifiers on top rows' middle finger keys
+*/
 #define MIRYOKU_LAYER_BASE \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp Q,             &kp W,             U_MT(HYPER, E),    &kp R,             &kp T,             &kp Y,             &kp U,             U_MT(HYPER, I),    &kp O,             &kp P,             \
 U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LSHFT, D),    U_MT(LCTRL, F),    &kp G,             &kp H,             U_MT(LCTRL, J),    U_MT(LSHFT, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI),   \
-U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             U_LT(U_CODE, V),   &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_LT(U_BUTTON, Z), U_MT(RALT, X),     U_MT(MEH, C),      U_LT(U_CODE, V),   &kp B,             &kp N,             &kp M,             U_MT(MEH, COMMA),  U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
