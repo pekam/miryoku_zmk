@@ -37,6 +37,6 @@ MIRYOKU_X(CODE,   "Code")
 // qwerty with code layer on V key
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&hm LGUI A,        &hm LALT S,        &hm LSHFT D,       &hm LCTRL F,       &kp G,             &kp H,             &hm LCTRL J,       &hm LSHFT K,       &hm LALT L,        &hm LGUI SEMI,      \
-&lt U_BUTTON Z,    &hm RALT X,        &kp C,             &lt U_CODE V,      &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
-U_NP,              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     U_NP,              U_NP
+U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LSHFT, D),    U_MT(LCTRL, F),    &kp G,             &kp H,             U_MT(LCTRL, J),    U_MT(LSHFT, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI),   \
+U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             U_LT(U_CODE, V),   &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
